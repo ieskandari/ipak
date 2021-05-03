@@ -1,0 +1,121 @@
+.form-control,label,.filter .btn,.dropdown-menu{
+    font-size: 12px;
+}
+.form-control,label,.filter .btn{
+    margin-top: 3px;
+}
+.form-control
+{
+    height: 24px;
+    padding: 2px 6px;
+}
+.form-control-warning,.table tbody td input.form-control-warning{
+    border: 1px solid #f0ad4e;
+}
+.form-control-danger{
+    border: 1px solid #ec0c04;
+}
+.label-control-warning{
+    color: #f0ad4e;
+}
+label{
+    margin-bottom: 0px;
+    margin-top: 14px;
+}
+.panel-heading .fa-filter{
+    cursor: pointer;
+}
+.panel-heading h5{
+    margin-top:2px;
+    margin-bottom: 2px;
+}
+ .panel-footer .fa{
+    margin-right: 10px;
+}
+.panel-footer{
+    padding: 5px 12px 5px 10px;
+}
+.filter .panel{
+    margin-bottom: 0px;
+}
+.btn{
+
+}
+.dropdown-menu>li>a{
+    padding: 3px 8px;
+}
+.bootstrap-select>.btn{
+    padding-right: 5px;
+    padding: 3px 12px;
+}
+.parent-select-dropdown{
+    position: relative;
+    border: 0;
+    padding-right: 0;
+}
+.parent-select-dropdown select{
+    position: absolute;
+    top: 0px;
+    overflow:auto;
+    z-index: 500;
+}
+.parent-select-dropdown .select-input-ajax{
+    position: absolute;
+    display: none;
+}
+.parent-select-dropdown .select-loader{
+    position: absolute;
+    z-index: 500;
+    width: 20px;
+    top: 5px;
+    left: 3px;
+    display: none;
+}
+.parent-select-dropdown .search-icon{
+    position: absolute;
+    z-index: 500;
+    width: 20px;
+    top: 8px;
+    left: 3px;
+    display: none;
+}
+.group-by-header{
+    padding: 2px 4px 13px 2px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+.group-by-header .title{
+    margin-left: 5px;
+}
+.group-by-header .value{
+color: red;
+}
+.editable-div{
+    border: 1px solid #a7a2a2;
+    border-radius: 4px;
+    padding: 8px;
+    min-height: 61px;
+}
+.editable-div-tools{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 0px 5px;
+}
+.editable-div-tools .fa{
+    font-size: 14px;
+    padding: 2px 4px 4px 4px;
+    cursor: pointer;
+}
+.editable-div-tools .fa:hover{
+    background: #dedede;
+}
+.editable-div h3,h4,h5{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.new-shortcode-model{
+    text-decoration: none;
+}
+
