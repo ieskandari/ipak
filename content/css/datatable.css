@@ -1,0 +1,290 @@
+.table-header {
+    /* padding: 10px 0px 10px 0px; */
+    font-size: 12px;
+}
+
+.panel-footer .report {
+    float: right;
+}
+
+.panel-footer .report-icon {
+    width: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.table-body {
+    font-size: 12px;
+    overflow-x: auto;
+    overflow-y: visible;
+    min-height: 250px;
+}
+
+.table-footer {
+    margin-bottom: 18px;
+    padding: 10px 0 5px 0;
+    border-top: 1px solid #e0e0e0;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-footer .table-footer-part {
+    border: 1px solid #f7f0f0;
+    padding: 6px;
+    height: 65px;
+    margin: 2px;
+}
+
+.table-footer .paging-links {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-header .search-box {
+    display: inline;
+}
+
+.table-header .search-box form {
+    margin: 0;
+}
+
+.table-header .search-box button {
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    border: 1px solid #b3acac;
+}
+
+.table-header .search-box input {
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    border: 1px solid #b3acac;
+    max-width: 132px;
+}
+
+.table-footer .paging {}
+
+.table-footer .paging a {
+    background-color: #eee;
+    padding: 2px 6px 2px 6px;
+    cursor: pointer;
+    margin: 2px;
+    text-decoration: none;
+}
+
+.table-footer .paging a.selected {
+    background-color: rgb(197, 194, 194);
+}
+
+.table-footer .paging a.noactive {
+    background-color: #eee;
+    padding: 2px 6px 2px 6px;
+    margin: 2px;
+}
+
+.table-footer .paging a.active:hover {
+    background-color: #ccc;
+}
+
+.table-footer .page-size {}
+
+.table {
+    width: 100%;
+    font-size: 12px;
+    /* table-layout:fixed; */
+    border-collapse: collapse;
+}
+
+.detail-box {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
+
+.detail-box .detail-title {
+    width: 50%;
+}
+
+.detail-box .detail-value {
+    width: 50%;
+    color: #3c63d0;
+}
+
+.table thead tr,
+.table tbody tr {}
+
+.table thead tr {}
+
+.table tbody tr td {
+    position: relative;
+}
+
+.table tbody tr td .table-menu {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    background-color: #fff;
+    z-index: 500;
+    border: 1px solid #737070;
+    display: none;
+}
+
+.table tbody tr td .table-menu .item-menu {
+    padding: 3px 8px 4px 8px;
+    border-bottom: 1px solid #cecdcd;
+    cursor: pointer;
+}
+
+.table tbody tr td .add-item {
+    display: none;
+}
+
+.table tbody tr td .table-menu .add-item {
+    display: block;
+}
+
+.table tbody tr td .table-menu .item-menu:hover {
+    background-color: #afaeae;
+}
+
+.table tr:nth-child(even) {
+    background-color: #d9edf7;
+}
+
+.table thead th,
+.table tbody td {
+    text-align: right;
+}
+
+.table tbody td img {
+    width: 80px;
+}
+
+.table>tbody>tr>td {
+    padding: 2px 5px 2px 5px;
+    vertical-align: middle;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-left: 1px solid #d2e4f3;
+}
+
+.table .first-td,
+.table .first-th {
+    width: 30px;
+}
+
+.table .second-td,
+.table .second-th {
+    width: 50px;
+}
+
+.table .last-td,
+.table .last-th {
+    overflow: visible;
+    width: 30px;
+}
+
+.table thead th {
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.table tbody td .operation {
+    width: 20px;
+    background-image: url(../img/menu.png);
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.table tbody td input,
+.table tbody thead tr th input {
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    border: 1px solid #b3acac;
+    width: 90%;
+    max-width: 100px;
+}
+
+.table tbody td input {
+    font-size: 13px;
+}
+
+.table tbody td input[type='checkbox'],
+.table tbody th input[type='checkbox'] {
+    width: 18px;
+}
+
+.table thead .sorting {
+    background-image: url(../img/sort_both.png);
+}
+
+.table thead .sorting-desc {
+    background-image: url(../img/sort_desc.png);
+}
+
+.table thead .sorting-asc {
+    background-image: url(../img/sort_asc.png);
+}
+
+.table tbody td {}
+
+form {
+    margin: 0;
+}
+
+.goto-page {
+    padding-right: 10px;
+}
+
+.goto-page input {
+    width: 55px;
+}
+
+.box-table-results {
+    margin-bottom: 15px;
+    /* display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.box-table-results .table-results {
+    float: right;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.box-table-results .table-results-label {
+    color: red;
+}
+
+.box-table-results .table-results-result {
+    margin-right: 10px;
+}
+
+@media (max-width: 990px) {
+    .table-footer {
+        display: block;
+    }
+    .table-footer div {
+        margin: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .table {
+        table-layout: initial;
+    }
+}

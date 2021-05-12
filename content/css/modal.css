@@ -1,0 +1,28 @@
+.close{
+    float: left;
+}
+.modal-footer{
+    text-align: left;
+}
+.modal-danger .modal-header{
+    background: #f9a2a2;
+    color: #fff;
+}
+.modal-dialog{
+
+}
+.modal-header .close{
+    font-size: 30px;
+    color: #000;
+}
+.modal .label-checkbox{
+    margin-left: 18px;
+    margin-right: 3px;
+}
+@media (min-width: 768px)
+{
+    .modal-dialog {
+        width: 600px;
+        margin: 100px auto;
+    }
+}
