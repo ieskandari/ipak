@@ -20,3 +20,4 @@ $ActivePlugins["ticket"]=1;
 $ActivePlugins["crm"]=1;
 $ActivePlugins["message"]=1;
 $ActivePlugins["rank"]=1;
+$ActivePlugins["board"]=1;
