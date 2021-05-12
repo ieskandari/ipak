@@ -33,6 +33,9 @@ $user_model = new model(array(
             "name" => "user_role", "title" => "سمت","nullable"=>false,"size"=>200
         )),
         new field(array(
+            "name" => "permission", "title" => "دسترسی","nullable"=>true,"type"=>"text"
+        )),
+        new field(array(
             "name" => "img", "title" => "تصویر","type"=>"text","size"=>2000,"file"=>"img"
         )),
         new field(array(
