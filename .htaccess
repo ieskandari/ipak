@@ -1,9 +1,0 @@
-<IfModule mod_rewrite.c>
-RewriteEngine on
-RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteCond %{SCRIPT_FILENAME} !-l
-RewriteRule ^([\s\S]*)$ index.php/$1
-RewriteRule (^|/)sys(/|$) - [F]
-Options All -Indexes
-</IfModule>
