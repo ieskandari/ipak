@@ -11,4 +11,4 @@ $secret_fields = array(
         )
     )
 );
-$secret_model = new model(array("name" => "secret", "title" => "فیلد محرمانه", "db_model" => true,"icon"=>"fa fa-cubes", "fields" => $secret_fields));
+$secret_model = new model(array("name" => "secret", "title" => "فیلد محرمانه", "db_model" => true,"icon"=>"fa fa-user-secret", "fields" => $secret_fields));

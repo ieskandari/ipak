@@ -11,4 +11,4 @@ $cat_formul_fields = array(
         )
     )
 );
-$cat_formul_model = new model(array("name" => "cat_formul", "title" => "دسته فرمول", "db_model" => true,"icon"=>"fa fa-cubes", "fields" => $cat_formul_fields));
+$cat_formul_model = new model(array("name" => "cat_formul", "title" => "دسته فرمول", "db_model" => true,"icon"=>"fa fa-calculator", "fields" => $cat_formul_fields));

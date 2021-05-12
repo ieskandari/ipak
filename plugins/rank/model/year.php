@@ -11,4 +11,4 @@ $year_fields = array(
         )
     )
 );
-$year_model = new model(array("name" => "year", "title" => "سال", "db_model" => true,"icon"=>"fa fa-cubes", "fields" => $year_fields));
+$year_model = new model(array("name" => "year", "title" => "سال", "db_model" => true,"icon"=>"fa fa-calendar", "fields" => $year_fields));

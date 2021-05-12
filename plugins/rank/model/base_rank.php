@@ -32,4 +32,4 @@ $base_rank_fields = array(
         )
     )
 );
-$base_rank_model = new model(array("name" => "base_rank", "title" => "اطلاعات محرمانه", "db_model" => true,"icon"=>"fa fa-cubes", "fields" => $base_rank_fields));
+$base_rank_model = new model(array("name" => "base_rank", "title" => "اطلاعات محرمانه", "db_model" => true,"icon"=>"fa fa-user-secret", "fields" => $base_rank_fields));

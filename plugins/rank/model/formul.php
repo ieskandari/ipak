@@ -23,4 +23,4 @@ $formul_fields = array(
         )
     ),
 );
-$formul_model = new model(array("name" => "formul", "title" => "فرمول", "db_model" => true, "icon" => "fa fa-cubes", "fields" => $formul_fields));
+$formul_model = new model(array("name" => "formul", "title" => "فرمول", "db_model" => true, "icon" => "fa fa-calculator", "fields" => $formul_fields));
