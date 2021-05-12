@@ -1,3 +1,3 @@
 <?php 
-define("BaseUrl","http://localhost:84/tornado/");
+define("BaseUrl","http://localhost:8000/ipak/");
  ?>
