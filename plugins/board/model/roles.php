@@ -30,4 +30,4 @@ $roles_fields = array(
         )
     )
 );
-$roles_model = new model(array("name" => "roles", "title" => "بولتن", "db_model" => true, "icon" => "fa fa-cubes", "fields" => $roles_fields));
+$roles_model = new model(array("name" => "roles", "title" => "بولتن", "db_model" => true, "icon" => "fa fa-newspaper-o", "fields" => $roles_fields));
