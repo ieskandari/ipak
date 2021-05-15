@@ -11,3 +11,4 @@
  *
  */
 include "model/model.php";
+include "graphic_board.php";
