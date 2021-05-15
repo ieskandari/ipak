@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo BaseUrl; ?>content/css/file-manager.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BaseUrl; ?>content/css/dashboard.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BaseUrl; ?>content/css/style.css">
+    <?php  do_action('header_styles'); ?>
     <script>
         var BaseUrl = '<?php echo BaseUrl ?>';
         <?php
