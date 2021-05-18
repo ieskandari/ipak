@@ -7,17 +7,17 @@ $post_fields = array(
     ),
     new field(
         array(
-            "name" => "title", "title" => "عنوان نوشته", "size" => 1000, "is_uniq" => true, "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
+            "name" => "title", "title" => "عنوان", "size" => 1000, "is_uniq" => true, "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
         )
     ),
     new field(
         array(
-            "name" => "description", "title" => "متن نوشته", "type" => "text",  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
+            "name" => "description", "title" => "متن", "type" => "text",  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
         )
     ),
     new field(
         array(
-            "name" => "post_type", "title" => "نوع نوشته", "in_form" => false, "in_table" => false, "size" => 500,  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
+            "name" => "post_type", "title" => "نوع", "in_form" => false, "in_table" => false,"defualt"=>"post", "size" => 500,  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
         )
     ),
     new field(
@@ -30,4 +30,4 @@ $post_fields = array(
     )),
 
 );
-$post_model = new model(array("name" => "post", "title" => "نوشته", "db_model" => true, "icon" => "fa fa-tags", "fields" => $post_fields));
+$post_model = new model(array("name" => "post", "title" => "نوشته ها", "db_model" => true, "icon" => "fa fa-sticky-note-o", "fields" => $post_fields));
