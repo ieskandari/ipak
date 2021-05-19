@@ -17,6 +17,11 @@ $post_fields = array(
     ),
     new field(
         array(
+            "name" => "category", "title" => "نوع", "type"=>"multi-check",  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-3")
+        )
+    ),
+    new field(
+        array(
             "name" => "post_type", "title" => "نوع", "in_form" => false, "in_table" => false,"defualt"=>"post", "size" => 500,  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
         )
     ),

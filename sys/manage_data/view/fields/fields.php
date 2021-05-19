@@ -139,5 +139,8 @@ switch ($field->type) {
       }
       break;
     }
+    case "multi-check": {
+      include "multi-check/multi-check.php";
+    }
 }
 do_action("after_filter_field_" . $ViewData["ModelName"] . "_" . $field->name);
