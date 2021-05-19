@@ -7,12 +7,12 @@ $post_fields = array(
     ),
     new field(
         array(
-            "name" => "title", "title" => "عنوان", "size" => 1000, "is_uniq" => true, "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
+            "name" => "title", "title" => "عنوان", "size" => 1000, "is_uniq" => true, "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-9")
         )
     ),
     new field(
         array(
-            "name" => "description", "title" => "متن", "type" => "text",  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
+            "name" => "description", "title" => "متن", "type" => "text","file" => "block", "in_table" => false,  "nullable" => true,  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-9")
         )
     ),
     new field(

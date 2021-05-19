@@ -49,7 +49,7 @@ switch ($field->type) {
       } else  if ($field->file == "gallery") {
         include "gallery.php";
       } else  if ($field->file == "block") {
-        $ViewData["ColClass"] = "col-xs-12 col-sm-12 col-md-12 col-lg-12";
+       // $ViewData["ColClass"] = "col-xs-12 col-sm-12 col-md-12 col-lg-12";
         include "block.php";
       }else  if ($field->file == "mini-block") {
         $ViewData["ColClass"] = "col-xs-12 col-sm-12 col-md-12 col-lg-12";
