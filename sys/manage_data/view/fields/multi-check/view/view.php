@@ -1,37 +1,22 @@
-
-
-
-<?php
-$treee = "";
-$treee  = $ViewData["MultiCheckValue"];
-?>
 <link href="<?php echo BaseUrl; ?>content/css/tree.css" rel="stylesheet">
-<form action="<?php echo BaseUrl  ?>admin/admin/set_permission?role_id=" method="post">
-<div class="panel panel-info">
-    <div class="panel-heading"><span>دسته بندی ها</span><span> </span></div>
-    <div class="panel-body">
-        <div style="margin-top: 15px;"></div>
-        <div class="tree">
-        </div>
+<div class="<?php echo $ViewData["ColClass"]; ?>">
+    <?php include   "sys/manage_data/view/fields/label.php"; ?>
+    <div class="tree">
     </div>
 </div>
-<input id="tree" name="tree" value="<?php echo $treee; ?>" type="hidden" />
-</form>
-
-
 <?php
 function MultiCheck_tree_view()
 {
     global $ViewData;
     $da = array();
-    $da = explode(",", $ViewData["MultiCheckValue"]);
+    $da = explode(",", $ViewData["MultiCheckTree"]);
     $jsontree = json_encode($da);
 ?>
     <script src="<?php echo BaseUrl; ?>content/js/tree.js"></script>
     <script>
         // prettier-ignore
         let data = <?php echo $ViewData["MultiCheckTree"]; ?>;
-//console.log(data);
+        //console.log(data);
         let tree = new Tree('.tree', {
             data: data,
             closeDepth: 3,

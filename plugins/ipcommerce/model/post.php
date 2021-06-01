@@ -12,14 +12,15 @@ $post_fields = array(
     ),
     new field(
         array(
-            "name" => "description", "title" => "متن", "type" => "text","file" => "block", "in_table" => false,  "nullable" => true,  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-9")
+            "name" => "category", "title" => "دسته بندی", "type"=>"multi-check",  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-3")
         )
     ),
     new field(
         array(
-            "name" => "category", "title" => "نوع", "type"=>"multi-check",  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-3")
+            "name" => "description", "title" => "متن", "type" => "text","file" => "block", "in_table" => false,  "nullable" => true,  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-9")
         )
     ),
+   
     new field(
         array(
             "name" => "post_type", "title" => "نوع", "in_form" => false, "in_table" => false,"defualt"=>"post", "size" => 500,  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-4")
