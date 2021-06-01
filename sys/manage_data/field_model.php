@@ -9,6 +9,7 @@ class field
     var $nullable = true;
     var $title = "";
     var $fk = array();
+    var $mfk = array();
     var $query = "";
     var $in_table = true;
     var $attr = array(); //col_class,input_class

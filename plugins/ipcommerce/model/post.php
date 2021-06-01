@@ -12,7 +12,9 @@ $post_fields = array(
     ),
     new field(
         array(
-            "name" => "category", "title" => "دسته بندی", "type"=>"multi-check",  "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-3")
+            "name" => "category", "title" => "دسته بندی", "type"=>"multi-check", "mfk" => array(
+                "model" => "ipcommerce/category", "key" => "id", "title" => "title"
+            ), "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-3")
         )
     ),
     new field(
