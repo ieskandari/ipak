@@ -1,26 +1,30 @@
 <?php
-class multi_check
-{
-  function fill_checks()
+if (!function_exists('multi_check')) {
+  function multi_check($dep)
   {
     global $ViewData, $TR_tools, $TR_db;
-    $query = " select * from ipcommerce_category  ";
+    $p_q = "";
+    $parent = "";
+    $model = str_replace('/', '_', $dep->mfk['model']);
+    $key = $dep->mfk['key'];
+    $title =  $dep->mfk['title'];
+    if (isset($dep->mfk['parent'])) {
+      $p_q = "," . $dep->mfk['parent'];
+      $parent = $dep->mfk['parent'];
+    }
+    $query = " select $key,$title $p_q from $model  ";
     $data = $TR_db->pdo_json($query);
     $tree = array();
-    foreach ($data as $key_plugin => $plugin) {
-      $children = array();
-      //if (count($plugin) > 0) {
-      //    $children[] = array("id" => $plugin['slug'] . "_" . $plugin['id'], "text" => $plugin['title'], "children" => array());
-      //}
-      $main_node = array("id" => $key_plugin, "text" => $plugin['title'], "parent_id" => $plugin['parent_id'], "children" => $children);
-
+    foreach ($data as $row) {
+      if (isset($dep->mfk['parent'])) {
+        $main_node = array("id" => $row[$key], "text" => $row[$title], "$parent" => $row[$parent]);
+      } else {
+        $main_node = array("id" => $row[$key], "text" => $row[$title]);
+      }
       $tree[] = $main_node;
     }
-
     $ViewData["MultiCheckTree"] = $TR_tools->json_encode($tree);
     include "view/view.php";
   }
 }
-$multi_check = new multi_check;
-$multi_check->fill_checks();
-//add_action("ipcommerce_category", array($multi_check, "fill_checks"));
+multi_check($field);
