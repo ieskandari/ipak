@@ -23,7 +23,7 @@ if (!function_exists('multi_check')) {
       }
       $tree[] = $main_node;
     }
-    $ViewData["MultiCheckTree"] = $TR_tools->json_encode($tree);
+    $ViewData["MultiCheckTree".$ViewData["InputName"]] = $TR_tools->json_encode($tree);
     include "view/view.php";
   }
 }
