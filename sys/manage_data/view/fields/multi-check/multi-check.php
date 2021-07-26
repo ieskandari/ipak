@@ -1,8 +1,8 @@
 <?php
 if (!function_exists('multi_check')) {
-  function multi_check($dep)
+  function multi_check($dep, $ViewData)
   {
-    global $ViewData, $TR_tools, $TR_db;
+    global  $TR_tools, $TR_db;
     $p_q = "";
     $parent = "";
     $model = str_replace('/', '_', $dep->mfk['model']);
@@ -23,8 +23,10 @@ if (!function_exists('multi_check')) {
       }
       $tree[] = $main_node;
     }
-    $ViewData["MultiCheckTree".$ViewData["InputName"]] = $TR_tools->json_encode($tree);
+    $ViewData["MultiCheckTree" . $dep->name] = $TR_tools->json_encode($tree);
     include "view/view.php";
   }
 }
-multi_check($field);
+add_action("footer_scripts", function () use ($field, $ViewData) {
+});
+multi_check($field, $ViewData);
