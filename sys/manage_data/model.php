@@ -198,7 +198,6 @@ class model
         //  $sql = $sql . " ALTER TABLE `" . $this->plugin . "_" . $this->name."_".TableLog . "` ADD " . $str . ";";
         $sql = $sql . " COMMIT;";
 
-
         $TR_db->pdo_exc($sql);
     }
     function alter_table_database()
