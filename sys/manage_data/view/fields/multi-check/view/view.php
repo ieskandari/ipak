@@ -18,12 +18,13 @@ if (!function_exists($func_tree)) {
             let tree<?php echo $dep->name; ?> = new Tree('.tree_<?php echo $dep->name; ?>', {
                 data: <?php echo $MultiCheckTree; ?>,
                 closeDepth: 3,
+                
                 loaded: function() {
                     this.values = <?php echo $jsontree; ?>;
                 },
-                onChange: function() {
-                    $("#tree_<?php echo $dep->name; ?>").val(this.values);
-                }
+                //onChange: function() {
+                //    $("#tree_<?php echo $dep->name; ?>").val(this.values);
+                //}
             });
             $('.treejs-node').addClass('treejs-node__close');
         </script>

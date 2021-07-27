@@ -24,6 +24,7 @@ class model
     var $default_rows = array();
     var $in_menu = true;
     var $is_report = false;
+    var $is_meta = false;
     var $current_parent_field;
     var $is_current_parent_field = false;
     var $results = array();
@@ -297,13 +298,12 @@ class model
         if ($this->delete_model_database) {
             $sql = $sql . "DROP TABLE IF EXISTS `" . $model . "`;";
         }
-        $sql = $sql . "CREATE TABLE IF NOT EXISTS `" . $model . "` (
-        ";
+        $sql = $sql . "CREATE TABLE IF NOT EXISTS `" . $model . "` ( ";
         $vir = "";
         $primary = "";
         foreach ($this->fields as $field) {
             $typeField =  get_class($field);
-            if ($typeField == "field" && !$field->is_view) {
+            if ($typeField == "field" && !$field->is_view && !$field->is_meta) {
                 $str = $this->field_tools->field_str($field);
                 if ($field->is_primary) {
                     $primary = "," . "PRIMARY KEY (`" . $field->name . "`)";
@@ -314,6 +314,15 @@ class model
         }
         $sql = $sql . $primary;
         $sql = $sql . ") ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;";
+        if($this->is_meta && !$this->is_log){
+            $sql = $sql . "CREATE TABLE IF NOT EXISTS `" . $model . "_meta` ( ";
+               $sql = $sql . " `" . $model . "_meta_id` bigint(18) NOT NULL AUTO_INCREMENT,
+               `" . $model . "_id` bigint(18) NOT NULL, 
+               `key_meta` varchar(200) NOT NULL,
+               `value_meta` text COLLATE utf8_persian_ci NOT NULL,
+               PRIMARY KEY (`" . $model . "_meta_id`) ";
+            $sql = $sql . ") ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;";
+        }
         return $sql;
     }
     function get_header_data_view()

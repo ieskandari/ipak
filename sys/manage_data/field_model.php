@@ -5,6 +5,7 @@ class field
     var $type = "string";
     var $size = 50;
     var $is_primary = false;
+    var $is_meta = false;
     var $default = null;
     var $nullable = true;
     var $title = "";

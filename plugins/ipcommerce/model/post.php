@@ -23,14 +23,14 @@ $post_fields = array(
     ),
     new field(
         array(
-            "name" => "tags", "title" => "برچسب", "type" => "multi-check", "mfk" => array(
+            "name" => "tags", "title" => "برچسب", "type" => "multi-check","is_meta" => true, "mfk" => array(
                 "model" => "ipcommerce/tags", "key" => "id", "title" => "title"
             ), "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-3")
         )
     ),
     new field(
         array(
-            "name" => "category", "title" => "دسته بندی", "type" => "multi-check", "mfk" => array(
+            "name" => "category", "title" => "دسته بندی", "type" => "multi-check","is_meta" => true, "mfk" => array(
                 "model" => "ipcommerce/category", "key" => "id", "title" => "title", "parent" => "parent_id"
             ), "attr" => array("col-class" => "col-xs-12 col-sm-6 col-md-6 col-lg-3")
         )
@@ -44,4 +44,4 @@ $post_fields = array(
         )
     ),
 );
-$post_model = new model(array("name" => "post", "title" => "نوشته ها", "db_model" => true, "icon" => "fa fa-sticky-note-o", "fields" => $post_fields));
+$post_model = new model(array("name" => "post", "title" => "نوشته ها", "db_model" => true,"is_meta" => true, "icon" => "fa fa-sticky-note-o", "fields" => $post_fields));

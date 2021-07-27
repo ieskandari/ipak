@@ -45,10 +45,11 @@ class field_tools
             $str = $str . " NOT NULL AUTO_INCREMENT";
         } else if (!$field->nullable) {
             $str = $str . " NOT NULL";
-        }
+        } 
         if (isset($field->default)) {
             $str = $str . " DEFAULT '" . $field->default . "'";
         }
+        
         return $str;
     }
     function get_fields_update($values,$is_param=false)
